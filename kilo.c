@@ -1,4 +1,4 @@
-#include <unistd.h.h>
+#include <unistd.h>
 
 /**
  * main - Entry point function.
@@ -9,6 +9,6 @@
 int main(void)
 {
 	char c;
-	while (read(STDIN_FILENO, &c, 1) == 1);
+	while (read(STDIN_FILENO, &c, 1) == 1 and c != 'q');
 	return (0);
 }
