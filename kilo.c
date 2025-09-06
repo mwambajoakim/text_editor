@@ -1,10 +1,14 @@
+#include <unistd.h.h>
+
 /**
- * main - Enttry point function.
+ * main - Entry point function.
  *
  * Return: 0 is success.
  */
 
 int main(void)
 {
+	char c;
+	while (read(STDIN_FILENO, &c, 1) == 1);
 	return (0);
 }
